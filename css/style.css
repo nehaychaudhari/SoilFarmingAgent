@@ -1,0 +1,334 @@
+/* Global Start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Global End */
+
+/* Header Start */
+
+header {
+  color: #fff;
+  font-size: 1.5rem;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  top: 0;
+}
+
+header h1 {
+  font-weight: 900;
+}
+
+/* Navbar */
+.header .content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Header End */
+
+/* Footer Start */
+
+footer {
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Footer End */
+
+/* Sections Start */
+
+/* Index Main Section */
+.main {
+  margin-top: 7rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.main section h2 {
+  font-size: 2.5rem;
+}
+
+.main button {
+  border: 2px solid #3fa5ca;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #3fa5ca;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: 900;
+}
+
+.main button:hover {
+  background: #3fa5ca;
+  color: #ffffff;
+}
+
+/* Common Content */
+.content {
+  background-color: #00000075;
+  padding: 1rem;
+  box-shadow: 0 0 20px 10px #00000044;
+}
+
+/* User Dashboard Main */
+.usermain {
+  margin-top: 10rem;
+  width: 100%;
+}
+
+/* Admin Dashboard Main */
+.containers {
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containers .content {
+  width: 90%;
+}
+
+.containers .content form .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.containers .content form .soilDetails,
+.containers .content form .destributor {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+th {
+  background-color: transparent;
+  text-align: center;
+}
+
+.containers input,
+.containers select,
+.containers textarea {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  margin: 0 2rem;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.containers select option {
+  background-color: #000000;
+}
+
+.containers input::placeholder,
+.containers textarea::placeholder {
+  color: #ffffff;
+}
+
+.containers .content form button {
+  width: 150px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.containers .content form .add {
+  color: #45a049;
+  border: 2px solid #45a049;
+}
+
+.containers .content form .retrieve {
+  color: #b000bd;
+  border: 2px solid #b000bd;
+}
+
+.containers .content form .update {
+  color: #3fa5ca;
+  border: 2px solid #3fa5ca;
+}
+
+.containers .content form .delete {
+  color: #c70000;
+  border: 2px solid #c70000;
+}
+
+.containers .content form .retrieve:hover {
+  background-color: #b000bd;
+  color: #ffffff;
+}
+
+.containers .content form .update:hover {
+  background-color: #3fa5ca;
+  color: #ffffff;
+}
+
+.containers .content form .delete:hover {
+  background-color: #c70000;
+  color: #ffffff;
+}
+
+/* Sections End */
+
+/* From Start*/
+.body {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.form-container {
+  background-color: #00000040;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px rgb(0, 0, 0);
+  width: 70vh;
+  margin-top: 5%;
+  text-align: center;
+  height: fit-content;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+#userForm input {
+  width: 90%;
+  padding: 10px;
+  color: #ffffff;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1.1px solid #ffffff;
+}
+
+#userForm input::placeholder {
+  color: #ffffff;
+}
+
+#userForm button {
+  width: 90%;
+  padding: 10px;
+  background-color: transparent;
+  color: #45a049;
+  border: 2px solid #45a049;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+#userForm button:hover,
+.containers .content form .add:hover {
+  background-color: #45a049;
+  color: #ffffff;
+}
+
+.password-toggle-icon i {
+  cursor: pointer;
+  float: right;
+  margin-top: -40px;
+  margin-right: 15px;
+  font-size: 18px;
+  line-height: 1;
+  color: #8e8e8e;
+  transition: color 0.6s ease-in-out;
+  position: relative;
+}
+
+.password-toggle-icon i:hover {
+  color: #ffffff;
+}
+
+.container-link {
+  color: #ffffff;
+  font-style: italic;
+}
+
+.container-link a {
+  color: #007bff;
+}
+
+/* From End*/
+
+/* Media Query Start */
+
+@media (max-width: 500px) {
+  header {
+    font-size: 1rem;
+    overflow: hidden;
+  }
+
+  .main {
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 10rem;
+  }
+
+  .containers {
+    min-height: 90vh;
+    margin-top: 7rem;
+  }
+
+  .containers .content form .row {
+    flex-direction: column;
+  }
+
+  .containers .content {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* Media Query End */
